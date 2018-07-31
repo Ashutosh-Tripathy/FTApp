@@ -6,6 +6,6 @@ import Button from './Button'
 storiesOf('Button')
 .add('Default', () => (
       <Button
-      name='Default button'
+      title='Default button' backgroundColor='red' onPress={()=> {}}
       />
       ))
