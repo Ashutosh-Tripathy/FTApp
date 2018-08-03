@@ -1,26 +1,27 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { View, Text } from 'react-native'
-import { Picker } from 'react-native';
+import { View, Text, Picker } from 'react-native'
 
-function MyPicker(props) {
-
+function MyPicker (props) {
   return (
-      <View>
+    <View>
       <Picker
-      selectedValue={props.selectedValue}
-      style={{ height: 50, width: 100 }}
-      onValueChange={(itemValue, itemIndex) => this.setState({language: itemValue})}>
-      <Picker.Item label="Java" value="java" />
-      <Picker.Item label="JavaScript" value="js" />
+        selectedValue={props.selectedValue}
+        style={{ height: 50, width: 100 }}
+        onValueChange={(itemValue, itemIndex) => props.onValueChange(itemValue, itemIndex)}>
+        {
+        props.items.map(item => <Picker.Item key={item.value} label={item.label} value={item.value} />)
+      }
       </Picker>
-      </View>);
+    </View>)
 }
 
-
 MyPicker.propTypes = {
-  selectedValue: PropTypes.string.isRequired
-  };
+  selectedValue: PropTypes.number.isRequired,
+  items: PropTypes.arrayOf(PropTypes.shape({
+    label: PropTypes.string.isRequired,
+    value: PropTypes.number.isRequired
+  })).isRequired
+}
 
-export default MyPicker;
-
+export default MyPicker

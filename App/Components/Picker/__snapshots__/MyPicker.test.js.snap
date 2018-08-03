@@ -5,7 +5,20 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <MyPicker
-    selectedValue="0"
+    items={
+      Array [
+        Object {
+          "label": "label1",
+          "value": 1,
+        },
+        Object {
+          "label": "label2",
+          "value": 2,
+        },
+      ]
+    }
+    onValueChange={[MockFunction]}
+    selectedValue={0}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -22,7 +35,7 @@ ShallowWrapper {
       "children": <Picker
         mode="dialog"
         onValueChange={[Function]}
-        selectedValue="0"
+        selectedValue={0}
         style={
           Object {
             "height": 50,
@@ -31,12 +44,12 @@ ShallowWrapper {
         }
       >
         <PickerItem
-          label="Java"
-          value="java"
+          label="label1"
+          value={1}
         />
         <PickerItem
-          label="JavaScript"
-          value="js"
+          label="label2"
+          value={2}
         />
       </Picker>,
     },
@@ -48,17 +61,17 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <PickerItem
-            label="Java"
-            value="java"
+            label="label1"
+            value={1}
           />,
           <PickerItem
-            label="JavaScript"
-            value="js"
+            label="label2"
+            value={2}
           />,
         ],
         "mode": "dialog",
         "onValueChange": [Function],
-        "selectedValue": "0",
+        "selectedValue": 0,
         "style": Object {
           "height": 50,
           "width": 100,
@@ -68,11 +81,11 @@ ShallowWrapper {
       "rendered": Array [
         Object {
           "instance": null,
-          "key": undefined,
+          "key": "1",
           "nodeType": "class",
           "props": Object {
-            "label": "Java",
-            "value": "java",
+            "label": "label1",
+            "value": 1,
           },
           "ref": null,
           "rendered": null,
@@ -80,11 +93,11 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": undefined,
+          "key": "2",
           "nodeType": "class",
           "props": Object {
-            "label": "JavaScript",
-            "value": "js",
+            "label": "label2",
+            "value": 2,
           },
           "ref": null,
           "rendered": null,
@@ -104,7 +117,7 @@ ShallowWrapper {
         "children": <Picker
           mode="dialog"
           onValueChange={[Function]}
-          selectedValue="0"
+          selectedValue={0}
           style={
             Object {
               "height": 50,
@@ -113,12 +126,12 @@ ShallowWrapper {
           }
         >
           <PickerItem
-            label="Java"
-            value="java"
+            label="label1"
+            value={1}
           />
           <PickerItem
-            label="JavaScript"
-            value="js"
+            label="label2"
+            value={2}
           />
         </Picker>,
       },
@@ -130,17 +143,17 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <PickerItem
-              label="Java"
-              value="java"
+              label="label1"
+              value={1}
             />,
             <PickerItem
-              label="JavaScript"
-              value="js"
+              label="label2"
+              value={2}
             />,
           ],
           "mode": "dialog",
           "onValueChange": [Function],
-          "selectedValue": "0",
+          "selectedValue": 0,
           "style": Object {
             "height": 50,
             "width": 100,
@@ -150,11 +163,11 @@ ShallowWrapper {
         "rendered": Array [
           Object {
             "instance": null,
-            "key": undefined,
+            "key": "1",
             "nodeType": "class",
             "props": Object {
-              "label": "Java",
-              "value": "java",
+              "label": "label1",
+              "value": 1,
             },
             "ref": null,
             "rendered": null,
@@ -162,11 +175,11 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": undefined,
+            "key": "2",
             "nodeType": "class",
             "props": Object {
-              "label": "JavaScript",
-              "value": "js",
+              "label": "label2",
+              "value": 2,
             },
             "ref": null,
             "rendered": null,
