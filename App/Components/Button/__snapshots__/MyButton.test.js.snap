@@ -4,8 +4,8 @@ exports[`MyComponent should render correctly 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Button
-    onPress={[Function]}
+  Symbol(enzyme.__unrendered__): <MyButton
+    onPress={[MockFunction]}
     title="Default title"
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -21,7 +21,7 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": <Button
-        onPress={[Function]}
+        onPress={[MockFunction]}
         title="Default title"
       />,
     },
@@ -31,7 +31,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "onPress": [Function],
+        "onPress": [MockFunction],
         "title": "Default title",
       },
       "ref": null,
@@ -47,7 +47,7 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": <Button
-          onPress={[Function]}
+          onPress={[MockFunction]}
           title="Default title"
         />,
       },
@@ -57,7 +57,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "onPress": [Function],
+          "onPress": [MockFunction],
           "title": "Default title",
         },
         "ref": null,

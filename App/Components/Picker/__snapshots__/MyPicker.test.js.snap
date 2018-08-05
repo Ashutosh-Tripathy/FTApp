@@ -8,6 +8,10 @@ ShallowWrapper {
     items={
       Array [
         Object {
+          "label": "Please select any value",
+          "value": 0,
+        },
+        Object {
           "label": "label1",
           "value": 1,
         },
@@ -44,6 +48,10 @@ ShallowWrapper {
         }
       >
         <PickerItem
+          label="Please select any value"
+          value={0}
+        />
+        <PickerItem
           label="label1"
           value={1}
         />
@@ -60,6 +68,10 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
+          <PickerItem
+            label="Please select any value"
+            value={0}
+          />,
           <PickerItem
             label="label1"
             value={1}
@@ -79,6 +91,18 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "0",
+          "nodeType": "class",
+          "props": Object {
+            "label": "Please select any value",
+            "value": 0,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
         Object {
           "instance": null,
           "key": "1",
@@ -126,6 +150,10 @@ ShallowWrapper {
           }
         >
           <PickerItem
+            label="Please select any value"
+            value={0}
+          />
+          <PickerItem
             label="label1"
             value={1}
           />
@@ -142,6 +170,10 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": Array [
+            <PickerItem
+              label="Please select any value"
+              value={0}
+            />,
             <PickerItem
               label="label1"
               value={1}
@@ -161,6 +193,18 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "class",
+            "props": Object {
+              "label": "Please select any value",
+              "value": 0,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
           Object {
             "instance": null,
             "key": "1",

@@ -5,17 +5,17 @@ import jsdom from 'jsdom';
 import {Picker} from 'react-native';
 
 describe('MyComponent', () => {
-  var props
-    beforeEach(() => {
-      props = {
-        selectedValue: 0,
-        items: [
-        { label: 'label1', value: 1 },
-        { label: 'label2', value: 2 }
-        ],
-        onValueChange: jest.fn()
-      };
-    })
+  var props;
+  beforeEach(() => {
+    props = {
+      selectedValue: 0,
+      items: [
+      { label: 'label1', value: 1 },
+      { label: 'label2', value: 2 }
+      ],
+      onValueChange: jest.fn()
+    };
+  })
 
   it('should render correctly', () => {
     const component = shallow(<MyPicker {...props} />);
