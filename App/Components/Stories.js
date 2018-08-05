@@ -2,5 +2,6 @@
 //import './DrawerButton.story'
 //import './FullButton.story'
 //import './RoundedButton.story'
-import './Button/Button.story'
+import './TextInputWithLabel/TextInputWithLabel.story'
+import './Button/MyButton.story'
 import './Picker/MyPicker.story'

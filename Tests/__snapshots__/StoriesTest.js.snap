@@ -1,94 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots AlertMessage Custom Style 1`] = `
-<View
-  style={
-    Array [
-      Object {
-        "justifyContent": "center",
-        "marginVertical": 25,
-      },
-      Object {
-        "backgroundColor": "red",
-      },
-    ]
-  }
->
-  <View
-    style={
-      Object {
-        "alignItems": "center",
-        "alignSelf": "center",
-      }
-    }
-  >
-    <Text
-      accessible={true}
-      allowFontScaling={false}
-      ellipsizeMode="tail"
-      style={
-        Object {
-          "color": "#CCCCCC",
-          "fontFamily": "Avenir-Book",
-          "fontSize": 17,
-          "fontWeight": "bold",
-          "marginHorizontal": 10,
-          "marginTop": 10,
-          "textAlign": "center",
-        }
-      }
-    >
-      ALERT ALERT
-    </Text>
-  </View>
-</View>
-`;
-
-exports[`Storyshots AlertMessage Default 1`] = `
-<View
-  style={
-    Array [
-      Object {
-        "justifyContent": "center",
-        "marginVertical": 25,
-      },
-      undefined,
-    ]
-  }
->
-  <View
-    style={
-      Object {
-        "alignItems": "center",
-        "alignSelf": "center",
-      }
-    }
-  >
-    <Text
-      accessible={true}
-      allowFontScaling={false}
-      ellipsizeMode="tail"
-      style={
-        Object {
-          "color": "#CCCCCC",
-          "fontFamily": "Avenir-Book",
-          "fontSize": 17,
-          "fontWeight": "bold",
-          "marginHorizontal": 10,
-          "marginTop": 10,
-          "textAlign": "center",
-        }
-      }
-    >
-      ALERT ALERT
-    </Text>
-  </View>
-</View>
-`;
-
-exports[`Storyshots AlertMessage Hidden 1`] = `null`;
-
-exports[`Storyshots Button Default 1`] = `
+exports[`Storyshots MyButton Default 1`] = `
 <View>
   <View
     accessibilityComponentType="button"
@@ -140,208 +52,122 @@ exports[`Storyshots Button Default 1`] = `
 </View>
 `;
 
-exports[`Storyshots DrawerButton Default 1`] = `
-<View
-  style={
-    Object {
-      "backgroundColor": "black",
-    }
-  }
->
+exports[`Storyshots Picker Default 1`] = `
+<View>
   <View
-    accessible={true}
-    isTVSelectable={true}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
     style={
       Object {
-        "opacity": 1,
+        "height": 50,
+        "width": 100,
       }
     }
   >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      style={
-        Object {
-          "color": "white",
-          "fontFamily": "Avenir-Book",
-          "fontSize": 20,
-          "marginVertical": 10,
-        }
+    <RCTPicker
+      items={
+        Array [
+          Object {
+            "label": "Please select any value",
+            "textColor": undefined,
+            "value": 0,
+          },
+        ]
       }
-    >
-      Drawer Button
-    </Text>
+      onChange={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      selectedIndex={0}
+      style={
+        Array [
+          Object {
+            "height": 216,
+          },
+          undefined,
+        ]
+      }
+    />
   </View>
 </View>
 `;
 
-exports[`Storyshots FullButton Custom Style 1`] = `
-<View
-  accessible={true}
-  isTVSelectable={true}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "backgroundColor": "blue",
-      "borderBottomColor": "#fb5f26",
-      "borderBottomWidth": 1,
-      "borderTopColor": "#e73536",
-      "borderTopWidth": 1,
-      "marginVertical": 5,
-      "opacity": 1,
-    }
-  }
->
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
+exports[`Storyshots Picker Have list of items 1`] = `
+<View>
+  <View
     style={
       Object {
-        "color": "white",
-        "fontFamily": "Avenir-Black",
-        "fontSize": 14,
-        "margin": 18,
-        "textAlign": "center",
+        "height": 50,
+        "width": 100,
       }
     }
   >
-    STYLE ME UP!
-  </Text>
+    <RCTPicker
+      items={
+        Array [
+          Object {
+            "label": "Please select any value",
+            "textColor": undefined,
+            "value": 0,
+          },
+          Object {
+            "label": "label1",
+            "textColor": undefined,
+            "value": 1,
+          },
+          Object {
+            "label": "label2",
+            "textColor": undefined,
+            "value": 2,
+          },
+        ]
+      }
+      onChange={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      selectedIndex={0}
+      style={
+        Array [
+          Object {
+            "height": 216,
+          },
+          undefined,
+        ]
+      }
+    />
+  </View>
 </View>
 `;
 
-exports[`Storyshots FullButton Default 1`] = `
-<View
-  accessible={true}
-  isTVSelectable={true}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "backgroundColor": "rgba(164, 0, 48, 0.5)",
-      "borderBottomColor": "#fb5f26",
-      "borderBottomWidth": 1,
-      "borderTopColor": "#e73536",
-      "borderTopWidth": 1,
-      "marginVertical": 5,
-      "opacity": 1,
-    }
-  }
->
+exports[`Storyshots TextInputWithLabel Default 1`] = `
+<View>
   <Text
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "white",
-        "fontFamily": "Avenir-Black",
-        "fontSize": 14,
-        "margin": 18,
-        "textAlign": "center",
-      }
-    }
   >
-    A SIMPLE BUTTON
+    Default label
   </Text>
+  <TextInput
+    allowFontScaling={true}
+    multiline={true}
+    onChange={[Function]}
+    value="Place holder text"
+  />
 </View>
 `;
 
-exports[`Storyshots RoundedButton Default 1`] = `
-<View
-  accessible={true}
-  isTVSelectable={true}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "backgroundColor": "#e73536",
-      "borderRadius": 5,
-      "height": 45,
-      "justifyContent": "center",
-      "marginHorizontal": 25,
-      "marginVertical": 10,
-      "opacity": 1,
-    }
-  }
->
+exports[`Storyshots TextInputWithLabel Multiline textinput 1`] = `
+<View>
   <Text
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "white",
-        "fontSize": 14,
-        "fontWeight": "bold",
-        "marginVertical": 10,
-        "textAlign": "center",
-      }
-    }
   >
-    A SIMPLE ROUNDED BUTTON
+    Default label
   </Text>
-</View>
-`;
-
-exports[`Storyshots RoundedButton Text as children 1`] = `
-<View
-  accessible={true}
-  isTVSelectable={true}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "backgroundColor": "#e73536",
-      "borderRadius": 5,
-      "height": 45,
-      "justifyContent": "center",
-      "marginHorizontal": 25,
-      "marginVertical": 10,
-      "opacity": 1,
-    }
-  }
->
-  <Text
-    accessible={true}
+  <TextInput
     allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "white",
-        "fontSize": 14,
-        "fontWeight": "bold",
-        "marginVertical": 10,
-        "textAlign": "center",
-      }
-    }
-  >
-    HELLO FROM THE CHILDREN!
-  </Text>
+    multiline={true}
+    onChange={[Function]}
+    value="Place holder text"
+  />
 </View>
 `;
