@@ -20,8 +20,8 @@ let propsWithItems = {
 
 storiesOf('Picker')
 .add('Default', () => (
-  <MyPicker {...propsWithItems} />
+      <MyPicker {...props} />
       ))
 .add('Have list of items', () => (
-  <MyPicker {...props} />
+      <MyPicker {...propsWithItems} />
       ))
