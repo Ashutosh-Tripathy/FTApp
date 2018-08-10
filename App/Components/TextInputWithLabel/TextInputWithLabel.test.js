@@ -20,9 +20,9 @@ describe('MyComponent', () => {
   })
 
   it('should call click event', () => {
-    //const component = shallow(<TextInputWithLabel {...props} />);
-    //component.find(Picker).first().props().onValueChange(1, 2);
-    //expect(props.onValueChange).toHaveBeenCalled();
-    //expect(props.onValueChange).toHaveBeenCalledWith(1, 2);
+    const component = shallow(<TextInputWithLabel {...props} />);
+    component.find(TextInput).first().props().onChange(1);
+    expect(props.onChange).toHaveBeenCalled();
+    expect(props.onChange).toHaveBeenCalledWith(1);
   })
 })

@@ -6,22 +6,30 @@ import MyPicker from './MyPicker'
 let props = {
   selectedValue: 0,
   items: [],
-  onValueChange: () => {}
-}
+  onValueChange: () => { }
+};
 
 let propsWithItems = {
-  selectedValue: 0,
+  ...props,
   items: [
-  { label: 'label1', value: 1 },
-  { label: 'label2', value: 2 }
-  ],
-  onValueChange: () => {}
-}
+    { label: 'label1', value: 1 },
+    { label: 'label2', value: 2 }
+  ]
+};
+
+
+let propsWithSelectedValue = {
+  ...propsWithItems,
+  selectedValue: 2
+};
 
 storiesOf('Picker')
-.add('Default', () => (
-      <MyPicker {...props} />
-      ))
-.add('Have list of items', () => (
-      <MyPicker {...propsWithItems} />
-      ))
+  .add('Default', () => (
+    <MyPicker {...props} />
+  ))
+  .add('Have list of items with defalut text', () => (
+    <MyPicker {...propsWithItems} />
+  ))
+  .add('Have list of items with selected text', () => (
+    <MyPicker {...propsWithSelectedValue} />
+  ))
