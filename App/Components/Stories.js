@@ -3,5 +3,5 @@
 //import './FullButton.story'
 //import './RoundedButton.story'
 import './TextInputWithLabel/TextInputWithLabel.story'
-import './Button/MyButton.story'
-import './Picker/MyPicker.story'
+import './MyButton/MyButton.story'
+import './PickerWithLabel/PickerWithLabel.story'

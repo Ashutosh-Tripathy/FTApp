@@ -1,9 +1,10 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react-native'
 
-import MyPicker from './MyPicker'
+import PickerWithLabel from './PickerWithLabel'
 
 let props = {
+  labelText: 'Default text',
   selectedValue: 0,
   items: [],
   onValueChange: () => { }
@@ -25,11 +26,11 @@ let propsWithSelectedValue = {
 
 storiesOf('Picker')
   .add('Default', () => (
-    <MyPicker {...props} />
+    <PickerWithLabel {...props} />
   ))
   .add('Have list of items with defalut text', () => (
-    <MyPicker {...propsWithItems} />
+    <PickerWithLabel {...propsWithItems} />
   ))
   .add('Have list of items with selected text', () => (
-    <MyPicker {...propsWithSelectedValue} />
+    <PickerWithLabel {...propsWithSelectedValue} />
   ))

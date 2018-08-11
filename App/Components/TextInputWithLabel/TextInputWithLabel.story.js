@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react-native'
 import TextInputWithLabel from './TextInputWithLabel'
 
 let props = {
-  name: 'Default label',
+  labelText: 'Default label',
   value: 'Place holder text',
   onChange: ()=>{}
 };

@@ -2,10 +2,11 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { View, Text, Picker } from 'react-native'
 
-function MyPicker (props) {
+function PickerWithLabel (props) {
   let items = [{label: 'Please select any value', value: 0}, ...props.items];
   return (
       <View>
+      <Text>{props.labelText}</Text>
       <Picker
       selectedValue={props.selectedValue}
       style={{ height: 50, width: 100 }}
@@ -17,7 +18,8 @@ function MyPicker (props) {
       </View>)
 }
 
-MyPicker.propTypes = {
+PickerWithLabel.propTypes = {
+  labelText: PropTypes.string.isRequired,
   selectedValue: PropTypes.number.isRequired,
   items: PropTypes.arrayOf(PropTypes.shape({
     label: PropTypes.string.isRequired,
@@ -25,4 +27,4 @@ MyPicker.propTypes = {
   })).isRequired
 }
 
-export default MyPicker
+export default PickerWithLabel

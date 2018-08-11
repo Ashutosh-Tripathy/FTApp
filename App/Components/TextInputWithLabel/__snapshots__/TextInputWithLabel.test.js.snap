@@ -5,7 +5,7 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <TextInputWithLabel
-    name="Default label"
+    labelText="Default text"
     onChange={[MockFunction]}
     value="Place holder text"
   />,
@@ -27,10 +27,11 @@ ShallowWrapper {
           allowFontScaling={true}
           ellipsizeMode="tail"
         >
-          Default label
+          Default text
         </Text>,
         <TextInput
           allowFontScaling={true}
+          labelText="Default text"
           multiline={true}
           onChange={[MockFunction]}
           value="Place holder text"
@@ -46,11 +47,11 @@ ShallowWrapper {
         "props": Object {
           "accessible": true,
           "allowFontScaling": true,
-          "children": "Default label",
+          "children": "Default text",
           "ellipsizeMode": "tail",
         },
         "ref": null,
-        "rendered": "Default label",
+        "rendered": "Default text",
         "type": [Function],
       },
       Object {
@@ -59,6 +60,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "allowFontScaling": true,
+          "labelText": "Default text",
           "multiline": true,
           "onChange": [MockFunction],
           "value": "Place holder text",
@@ -82,10 +84,11 @@ ShallowWrapper {
             allowFontScaling={true}
             ellipsizeMode="tail"
           >
-            Default label
+            Default text
           </Text>,
           <TextInput
             allowFontScaling={true}
+            labelText="Default text"
             multiline={true}
             onChange={[MockFunction]}
             value="Place holder text"
@@ -101,11 +104,11 @@ ShallowWrapper {
           "props": Object {
             "accessible": true,
             "allowFontScaling": true,
-            "children": "Default label",
+            "children": "Default text",
             "ellipsizeMode": "tail",
           },
           "ref": null,
-          "rendered": "Default label",
+          "rendered": "Default text",
           "type": [Function],
         },
         Object {
@@ -114,6 +117,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "allowFontScaling": true,
+            "labelText": "Default text",
             "multiline": true,
             "onChange": [MockFunction],
             "value": "Place holder text",

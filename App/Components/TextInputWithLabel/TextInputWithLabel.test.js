@@ -8,9 +8,9 @@ describe('MyComponent', () => {
   var props;
   beforeEach(() => {
     props = {
-      name: 'Default label',
-        value: 'Place holder text',
-        onChange: jest.fn()
+      labelText: 'Default text',
+      value: 'Place holder text',
+      onChange: jest.fn()
     };
   })
 
